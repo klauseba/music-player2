@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/60fcc45c08.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-info">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            
+
+            <img src="images/Sigrid.jpg" id="cover" class="song-img" alt="music-cover">
+            <h1 id="title">Wildest Dreams</h1>
+            
+            <audio src="music/Sigrid.mp3" id="audio"></audio>
+
+
+            <div class="progress-container">
+                <input type="range" value="0" id="progress" >
+            </div>
+
+            
+            <div class="controls">
+                <div id="prev" class="action-btn"><i class="fas fa-backward" ></i></div>
+                <div id="play" class="action-btn action-btn-big"><i class="fas fa-play"></i></div>
+                <div id="next" class="action-btn"><i class="fas fa-forward" ></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!--
+source: https://www.youtube.com/watch?v=JtrFzoL1joI
+
+media/Swoon - Chemical Brothers.mp3
+media/Rosentwig (not Forhill) - Wildest Dreams.mp3
+
+
+<source src="media/Swoon.mp3" type="audio/mp3">
+<source src="media/Vank.mp3" type="audio/mp3">
+<source src="media/WildestDreams.mp3" type="audio/mp3">
+
+
+          
+ <div><i class="fa-solid fa-backward" id="ctrlBackward"></i></div>
+ <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+ <div><i class="fa-solid fa-forward" id="ctrlForward"></i></div>
+        
+      
+ 
+ HTML part
+
+    <div >
+     <input type="range" value="0" id="progress" class="progress-container">
+    </div>
+
+CSS part:
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22); 
+}
+
+-->
